@@ -1,0 +1,116 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Student Details</h1> </center>  
+  <hr>  
+  <label> Student Name: </label>   
+<input type="text" name="sname" placeholder= "Student Name" size="15" required />   
+<label> Father's Name: </label>   
+<input type="text" name="fname" placeholder="Father's Name" size="15" required />   
+<label> Mother's Name: </label>    
+<input type="text" name="mname" placeholder="Mother's Name" size="15"required />   
+<div>  
+<label>   
+Grade :  
+</label>   
+  
+<select>  
+<option value="grade">Grade</option>  
+<option value="1">1</option>  
+<option value="2">2</option>  
+<option value="3">3</option>  
+<option value="4">4</option>  
+<option value="5">5</option>  
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female    
+</div>  
+<label>   
+Phone :  
+</label>    
+<input type="int" name="phone" placeholder="Phone no." size="10" required><br><br>
+<label>
+Current Address :
+</label>  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Caste certificate</b></label>   
+    <input type="file" multiple="false" accept="image/*" id=finput onchange="upload()"> 
+<div>
+    <br>  
+<label>   
+Blood Group :  
+</label>   
+  
+<select>  
+<option value="blood">Blood Group</option>  
+<option value="ap">A+</option>  
+<option value="bp">B+</option>  
+<option value="op">O+</option>  
+<option value="an">A-</option>  
+<option value="on">O-</option>  
+</select>  
+</div><br>
+<label>   
+Aadhar Number:
+</label> <br>   
+<input type="int" name="ano" placeholder="Aadhar Number" size="12" required>   
+</form>  
+</body>  
+</html>  
